@@ -28,4 +28,24 @@ class AppTest {
         App.main("--football", "football.csv");
     }
 
+    @Test
+    void runWeather() {
+        App.main("--weather", "weather.csv");
+    }
+
+    @Test
+    void runUnknownCommand() {
+        App.main("--eXXcellentRules", "football.csv");
+    }
+
+    @Test
+    void runUnknownFileName() {
+        App.main("--football", "foo.csv");
+    }
+
+    @Test
+    void runWithInsufficientArguments() {
+        App.main("--football");
+    }
+
 }
