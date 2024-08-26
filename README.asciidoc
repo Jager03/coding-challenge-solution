@@ -37,9 +37,9 @@ The main method initializes the three components needed for the solution, then c
 
 AppTest::
 New test were implemented to check following functionalities:
-1. runWeather() to run the application using weather command
-2. runUnknownCommand() to run the application using not registered command
-3 runUnknownFileName() to check error handling when running the app with a unknown file
-4. runWithInsufficientArguments() to test parameter checking
+1. `runWeather()` to run the application using weather command
+2. `runUnknownCommand()` to run the application using not registered command
+3. `runUnknownFileName()` to check error handling when running the app with a unknown file
+4. `runWithInsufficientArguments()` to test parameter checking
 
 
