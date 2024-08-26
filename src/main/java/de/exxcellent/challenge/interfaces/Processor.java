@@ -5,7 +5,6 @@ import de.exxcellent.challenge.classes.FootballTeam;
 
 import java.util.List;
 
-public interface Processor {
-    public int findDayWithSmallestSpread(List<Weather> weatherData);
-    public String findTeamWithSmallestGoalDifference(List<FootballTeam> footballData);
+public interface Processor<T, R>{
+    public R solveTask(List<T> data);
 }
